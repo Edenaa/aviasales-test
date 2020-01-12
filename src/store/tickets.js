@@ -31,6 +31,7 @@ export default class {
             // }
         }).catch((e) => {
           console.log(e)
+          this.loadTickets();
         });
       // }, 1000);
       

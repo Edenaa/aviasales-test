@@ -1,4 +1,7 @@
 .mainContent {
   display: flex;
   align-items: baseline;
+  @media(max-width: 768px) {
+    flex-direction: column;
+  }
 }
