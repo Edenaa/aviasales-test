@@ -1,0 +1,35 @@
+.checkList {
+  display: flex;
+  flex-direction: column;
+}
+.checkboxItem {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  font-size: 13px;
+  line-height: 20px;
+  color: #4A4A4A;
+  cursor: pointer;
+  &:hover {
+    background-color: #F1FCFF;
+  }
+}
+.checkboxIcon {
+  display: block;
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #9ABBCE;
+  border-radius: 2px;
+}
+input {
+  display: none;
+  &:checked + .checkboxIcon {
+    border: 1px solid #2196F3;
+    background-image: url(../../img/checked.svg);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
